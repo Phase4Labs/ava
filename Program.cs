@@ -907,7 +907,7 @@ public static class Program
                     // Load open positions for this ticker (cheap single-row query)
                     var posRows = await db.SelectAsync<TraderStateRow>(
                         "trader_state",
-                        $"?ticker=eq.{Uri.EscapeDataString(t)}&position=neq.flat&select=*",
+                        $"?ticker=eq.{Uri.EscapeDataString(t)}&position=in.(long,short)&select=*",
                         CancellationToken.None);
 
                     if (posRows.Count > 0)
