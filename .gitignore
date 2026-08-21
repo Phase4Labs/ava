@@ -1,0 +1,40 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache/options
+.vs/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+
+# Others
+*.log
+*.tmp
+*.temp
+
+stage2c8_evidence_ranking
+stage2c_benchmark
+stage2c_benchmark_opportunities
+stage2c6_candidate_evidence_calibration
+stage2c7_temporal_holdout
+# AVA generated historical corpora
+get_assessment_no_graph_transition/historical_corpus_*/
+*.csv
+
+historical_*/
+.env*
